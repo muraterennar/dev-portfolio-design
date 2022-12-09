@@ -1,8 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
 * {
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -12,9 +15,12 @@ body {
 :root {
   --base-color: rgb(97, 140, 236);
   --base-color-dark: rgb(27, 53, 87);
+  --base-color-dark-2: rgb(10, 15, 29);
   --base-color-2: rgb(238, 238, 238);
   --base-color-2-opac: rgb(162, 169, 175, 0.5);
-  --base-color-opac: rgba(97, 140, 236, 0.8);
+  --base-color-opac: rgba(97, 140, 236, 0.5);
+  --black-color: #252525;
+  --white-color: #ffff;
 }
 
 /* ----- Navbar-Bottom-Fixed ------ */
@@ -25,9 +31,10 @@ body {
   width: 300px;
   height: 75px;
   border-radius: 2rem;
-  background-color: var(--base-color-2);
+  background-color: rgba(238, 238, 238, 0.9);
   padding-left: 15px;
   padding-right: 15px;
+  z-index: 2;
 
   display: flex;
   justify-content: space-between;
@@ -37,7 +44,9 @@ body {
   flex-direction: row;
 
   margin-left: -150px;
-  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 10px 15px -3px rgba(97, 140, 236, 0.3);
+  -moz-box-shadow: 0 4px 4px rgba(97, 140, 236, 0.3);
+  -webkit-box-shadow: 0 4px 4px rgba(97, 140, 236, 0.3);
 }
 
 .nav-bottom div {
@@ -57,33 +66,115 @@ body {
 
 /* ------- Header - Top ------------ */
 .header-top {
-  padding: 15px 30px 15px 30px;
-  color: #f1f1f1;
-  font-size: 1.1rem;
-  font-weight: 500;
-  position: fixed;
+  background-color: hwb(0 95% 5%);
   width: 100%;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  align-content: center;
-  overflow: auto;
-  flex-direction: row;
+}
+.navbar-home {
   transition: 0.3s;
-  color: rgb(37, 37, 37);
+  font-weight: 500;
 }
 
-.header-top div {
+/* ----------- Home CSS --------------- */
+
+.main {
+  height: 85vh;
+}
+
+.section {
+  height: 100%;
+}
+
+.home-container {
+  height: 100%;
+}
+
+.home-container .row {
+  height: 100%;
+  transition: 0.3s;
+}
+
+.social-link {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 15px;
+  width: 35px;
+  text-align: center;
+  padding: 5px;
+}
+
+.social-link a {
+  transition: 0.3s;
+  border-radius: 25%;
+  text-decoration: none;
+  color: var(--base-color);
+  background-color: rgba(241, 241, 241, 0.8);
+  padding: 5px;
+}
+
+.social-link a:hover {
+  background-color: var(--base-color);
+  color: #f1f1f1;
+}
+
+.home-title {
+  font-size: 1rem;
+  font-weight: 600px;
+}
+
+.image-div {
+  background: rgb(81, 173, 199);
+  background: linear-gradient(
+    0deg,
+    rgba(81, 173, 199, 1) 0%,
+    rgba(46, 122, 175, 1) 26%,
+    rgba(45, 97, 149, 1) 49%,
+    rgba(0, 20, 39, 1) 100%
+  );
+  border-radius: 15px;
+  height: 100%;
+}
+
+.button-groups {
+  margin-bottom: 50px;
   cursor: pointer;
 }
 
-.headerScrollActive {
+.btn-cv {
+  border: 1px solid var(--base-color);
+  text-decoration: none;
+  color: var(--base-color);
+  border-radius: 5px;
+  transition: 0.3s;
+  font-weight: 400;
+  padding: 10px 2.5rem;
+}
+
+.btn-cv:hover {
+  border: 1px solid var(--base-color);
   background-color: var(--base-color);
-  -moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
-  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
-  color: #f1f1f1;
+  color: var(--base-color-2);
+}
+
+.btn-blog {
+  margin-left: 15px;
+  background-color: var(--base-color);
+  text-decoration: none;
+  color: var(--base-color-2);
+  padding: 10px 4rem;
+  border-radius: 5px;
+  border: none;
+  transition: 0.3s;
+}
+
+.btn-blog:hover {
+  border: 1px solid var(--base-color);
+  background-color: transparent;
+  color: var(--base-color);
+}
+
+.image-div img {
+  width: 200px;
+  height: auto;
 }
 
 /* ------ Responsive ------ */
@@ -124,6 +215,14 @@ body {
 }
 
 @media (max-width: 375.98px) {
+  .main {
+    height: 75vh;
+  }
+
+  .social-link {
+    font-size: 0.95rem;
+  }
+
   .nav-bottom {
     width: 75%;
     height: 70px;
@@ -139,11 +238,15 @@ body {
 
     margin-left: -140px;
   }
+
+  .main {
+    height: 50vh;
+  }
 }
 
 @media (max-width: 320.98px) {
   .nav-bottom {
-    width: 75%;
+    width: 80%;
     height: 70px;
 
     margin-left: -120px;
@@ -151,8 +254,12 @@ body {
 }
 
 @media (max-width: 300.98px) {
+  .main {
+    height: 75vh;
+  }
+
   .nav-bottom {
-    width: 75%;
+    width: 80%;
     height: 70px;
 
     margin-left: -105px;
