@@ -34,16 +34,16 @@
 
         <!-- Navbar - Bottom -->
         <section class="nav-bottom">
-            <div id="icon-link"><a href="" class="nav-link"><i class="ri-home-2-line"></i></a></div>
-            <div id="icon-link"><a href="" class="nav-link"><i class="ri-trophy-line"></i></a></div>
-            <div id="icon-link"><a href="" class="nav-link"><i class="ri-archive-line"></i></a></div>
-            <div id="icon-link"><a href="" class="nav-link" disable><i class="ri-file-list-3-line"></i></a></div>
+            <div id="icon-link"><a href="#home" class="nav-link"><i class="ri-home-2-line"></i></a></div>
+            <div id="icon-link"><a href="#skills" class="nav-link"><i class="ri-trophy-line"></i></a></div>
+            <div id="icon-link"><a href="#projects" class="nav-link"><i class="ri-archive-line"></i></a></div>
+            <div id="icon-link"><a href="#blog" class="nav-link" disable><i class="ri-file-list-3-line"></i></a></div>
         </section>
 
 
         <!-- Home & About -->
         <main class="main">
-            <section class="section">
+            <section id="home" class="section">
                 <div class="home-container container">
                     <div class="row">
                         <div class="col-2 d-flex flex-column justify-content-end align-items-start">
@@ -58,50 +58,58 @@
                             </div>
                         </div>
                         <div class="col-8 d-flex flex-column justify-content-start align-items-center align-self-start mt-4">
-                            <div class="home-title"><strong>Merhaba</strong></div>
+
+
+                            <div class="home-img">
+                                <img src="assests/img/men-small.jpeg" class="img-fluid rounded rounded-3 img" alt="">
+                            </div>
                             <figure class="text-center">
                                 <blockquote class="blockquote">
-                                  <p class="display-6"><strong>Murat Eren Nar</strong></p>
+                                    <p class="display-5"><strong>Murat Eren Nar</strong></p>
                                 </blockquote>
                                 <figcaption class="blockquote-footer">
-                                  Full Stack <cite title="Source Title">Developer</cite>
+                                    Full Stack <cite title="Source Title">Developer</cite>
                                 </figcaption>
-                              </figure>
+                            </figure>
 
-                            <div class="button-groups">
-                                <a class="btn-cv">CV</a>
-                                <a class="btn-blog">Blog</a>
+                            <div class="btn-group" role="group" aria-label="Basic example">
+                                <button type="button" class="btn btn-cv rounded rounded-2  me-4">CV</button>
+                                <button type="button" class="btn btn-blog rounded rounded-2">Blog</button>
                             </div>
+                        </div>
+                    </div>
+            </section>
 
-                            <div class="image-div p-2">
-                                <img src="assests/img/deneme.png" alt="" class="img-fluid">
-                            </div>
+            <section id="skills" class="skill-section">
+                <div class="container skill-container text-center">
+                    <h1 class="mt-3">Yetenekler</h1>
+                    <hr class="border border-1 border-light opacity-75">
+                    <div class="row skill-row">
+                        <div class="col col-skill-backend">
+                            <h3>Backend</h3>
+                            <ul class="skill-list">
+                                <li class="skill-name " ><i class="fa-regular fa-circle-check"></i> C#</li>
+                                <li class="skill-name"><i class="fa-regular fa-circle-check"></i> .Net Core</li>
+                                <li class="skill-name"><i class="fa-regular fa-circle-check"></i> .Net Core MVC</li>
+                                <li class="skill-name"><i class="fa-regular fa-circle-check"></i> SQL Server</li>
+                                <li class="skill-name"><i class="fa-regular fa-circle-check"></i> Java</li>
+                            </ul>
+                        </div>
+                        <div class="col ms-2 coll-skill-frontend">
+                            <h3>Frontend</h3>
+                            <ul class="skill-list">
+                                <li class="skill-name " ><i class="fa-regular fa-circle-check"></i> HTML</li>
+                                <li class="skill-name"><i class="fa-regular fa-circle-check"></i> CSS</li>
+                                <li class="skill-name"><i class="fa-regular fa-circle-check"></i> JavaScript</li>
+                                <li class="skill-name"><i class="fa-regular fa-circle-check"></i> TypeScript</li>
+                                <li class="skill-name"><i class="fa-regular fa-circle-check"></i> Angular</li>
+                                <li class="skill-name"><i class="fa-regular fa-circle-check"></i> Figma</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </section>
         </main>
-
-
-        <!-- <main class="main">
-            <section class="home section" id="home">
-                <div class="container home-container overflow-hidden text-center">
-                    <div class="row gx-5 bg-dark">
-                      <div class="col-2 home-social d-flex flex-column justify-content-end align-items-start">
-                       <div class="p-3 border bg-light">link</div>
-                      </div>
-                      <div class="col-8">
-                        <div class="p-3 border bg-light">
-                            Ana Yer
-                        k</div>
-                      </div>
-                    </div>
-                  </div>
-            </section>
-        </main> -->
-
-
-
 
         <!-- Bootstrap Js -->
         <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

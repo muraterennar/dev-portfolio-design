@@ -12,6 +12,10 @@ body {
   background-color: rgb(235, 235, 235);
 }
 
+a{
+  text-decoration: none;
+}
+
 :root {
   --base-color: rgb(97, 140, 236);
   --base-color-dark: rgb(27, 53, 87);
@@ -77,11 +81,12 @@ body {
 /* ----------- Home CSS --------------- */
 
 .main {
-  height: 85vh;
+  height: 100vh;
 }
 
 .section {
-  height: 100%;
+  height: 100vh;
+  padding-top:50px;
 }
 
 .home-container {
@@ -121,61 +126,81 @@ body {
   font-weight: 600px;
 }
 
-.image-div {
-  background: rgb(81, 173, 199);
-  background: linear-gradient(
-    0deg,
-    rgba(81, 173, 199, 1) 0%,
-    rgba(46, 122, 175, 1) 26%,
-    rgba(45, 97, 149, 1) 49%,
-    rgba(0, 20, 39, 1) 100%
-  );
-  border-radius: 15px;
-  height: 100%;
-}
-
-.button-groups {
-  margin-bottom: 50px;
-  cursor: pointer;
-}
-
-.btn-cv {
-  border: 1px solid var(--base-color);
-  text-decoration: none;
-  color: var(--base-color);
-  border-radius: 5px;
-  transition: 0.3s;
-  font-weight: 400;
-  padding: 10px 2.5rem;
-}
-
-.btn-cv:hover {
-  border: 1px solid var(--base-color);
+.home-img{
   background-color: var(--base-color);
-  color: var(--base-color-2);
-}
-
-.btn-blog {
-  margin-left: 15px;
-  background-color: var(--base-color);
-  text-decoration: none;
-  color: var(--base-color-2);
-  padding: 10px 4rem;
-  border-radius: 5px;
-  border: none;
-  transition: 0.3s;
-}
-
-.btn-blog:hover {
-  border: 1px solid var(--base-color);
-  background-color: transparent;
-  color: var(--base-color);
-}
-
-.image-div img {
-  width: 200px;
+  padding: 7px;
+  border-radius: 10%;
+  width: 150px;
   height: auto;
+  margin-bottom: 35px;
 }
+
+.img{
+  border: 2px solid #f1f1f1;
+}
+
+.btn-cv{
+  border: 1px solid var(--base-color);
+  transition: 0.3s;
+  color: var(--base-color);
+  width: 100px;
+  font-weight: 500;
+}
+
+
+.btn-cv:hover, .btn-cv:hover:active{
+  background-color: var(--base-color);
+  color: var(--base-color-2);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.btn-blog{
+  background-color: var(--base-color);
+  border: 1px solid var(--base-color);
+  transition: 0.3s;
+  color: var(--base-color-2);
+  width: 200px;
+  font-weight: 500;
+}
+
+.btn-blog:hover, .btn-blog:hover:active{
+  border: 1px solid var(--base-color);
+  color: var(--base-color);
+  background-color: transparent;  
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.btn-blog:active{
+  transform: scale(1.01);
+}
+
+
+/* ----------------- Skills -------------------------- */
+
+.skill-section{
+  height: 100vh;
+  margin-top: 30px;
+  padding: 10px;
+  padding-top: 30px;
+}
+
+.skill-container{
+  border: 1px solid var(--base-color);
+  background-color: var(--base-color);
+  border-radius: 10px;
+  color: var(--base-color-2);
+  padding: 15px;
+  height: 90%;
+}
+
+.skill-list{
+  text-align: start;
+  padding: 10px;
+  width: 180px;
+  margin-left:35%;
+  font-size: 1.2rem;
+}
+
 
 /* ------ Responsive ------ */
 @media (max-width: 991.98px) {
@@ -229,6 +254,22 @@ body {
 
     margin-left: -140px;
   }
+
+  .btn-cv{
+    border: 1px solid var(--base-color);
+    transition: 0.3s;
+    color: var(--base-color);
+    width: 90px;
+    font-weight: 500;
+  }
+  .btn-blog{
+    background-color: var(--base-color);
+    border: 1px solid var(--base-color);
+    transition: 0.3s;
+    color: var(--base-color-2);
+    width: 180px;
+    font-weight: 500;
+  }
 }
 
 @media (max-width: 360.98px) {
@@ -242,6 +283,27 @@ body {
   .main {
     height: 50vh;
   }
+
+  .home-img{
+    width: 120px;
+    height: auto;
+  }
+
+  .btn-cv{
+    border: 1px solid var(--base-color);
+    transition: 0.3s;
+    color: var(--base-color);
+    width: 70px;
+    font-weight: 500;
+  }
+  .btn-blog{
+    background-color: var(--base-color);
+    border: 1px solid var(--base-color);
+    transition: 0.3s;
+    color: var(--base-color-2);
+    width: 135px;
+    font-weight: 500;
+  }
 }
 
 @media (max-width: 320.98px) {
@@ -250,6 +312,30 @@ body {
     height: 70px;
 
     margin-left: -120px;
+  }
+
+  .home-img{
+    width: 140px;
+  }
+
+  strong{
+    font-size: 1.7rem;
+  }
+
+  .btn-cv{
+    border: 1px solid var(--base-color);
+    transition: 0.3s;
+    color: var(--base-color);
+    width: 50px;
+    font-weight: 500;
+  }
+  .btn-blog{
+    background-color: var(--base-color);
+    border: 1px solid var(--base-color);
+    transition: 0.3s;
+    color: var(--base-color-2);
+    width: 100px;
+    font-weight: 500;
   }
 }
 
@@ -263,5 +349,21 @@ body {
     height: 70px;
 
     margin-left: -105px;
+  }
+
+  .btn-cv{
+    border: 1px solid var(--base-color);
+    transition: 0.3s;
+    color: var(--base-color);
+    width: 50px;
+    font-weight: 500;
+  }
+  .btn-blog{
+    background-color: var(--base-color);
+    border: 1px solid var(--base-color);
+    transition: 0.3s;
+    color: var(--base-color-2);
+    width: 100px;
+    font-weight: 500;
   }
 }
