@@ -1,21 +1,22 @@
 // ScrollReveal({ distance: '60px' });
 // navbar-bottom
-ScrollReveal().reveal('.nav-bottom', {
+ScrollReveal().reveal('.header', {
     origin: "top",
     delay:400,
     distance:"60px"
 });
 
-// header
-ScrollReveal().reveal('.header-top', {
-    origin: "top",
-    distance:"60px"
-});
-
 // home
-ScrollReveal().reveal('.main', {
+ScrollReveal().reveal('.btn-group', {
     opacity:0,
     delay:1000,
     origin:"top",
     distance:"0px"
+});
+
+ScrollReveal().reveal('.card', {
+    opacity:0,
+    delay:400,
+    origin:"start",
+    distance:"-60px"
 });

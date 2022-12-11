@@ -1,6 +1,21 @@
-const header = document.querySelector(".header-top");
-console.log(header);
+/* ======== FILTERS JS ======== */
 
-// window.addEventListener('scroll', () => {
-//     header.classList.toggle("headerScrollActive", window.scrollY > 0)
-// })
+const tabs = document.querySelectorAll("[data-target]"),
+    tabContents = document.querySelectorAll("[data-content]");
+
+tabs.forEach((tab) => {
+    tab.addEventListener("click", () => {
+        const target = document.querySelector(tab.dataset.target);
+
+        tabContents.forEach((tc) => {
+            tc.classList.remove("filters_active");
+        });
+
+        target.classList.add("filters_active");
+
+        tabs.forEach((t) => {
+            t.classList.remove("filters-tab-active");
+        });
+        tab.classList.add("filters-tab-active");
+    });
+});

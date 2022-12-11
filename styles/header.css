@@ -1,0 +1,122 @@
+.header {
+  margin-top: 5%;
+}
+
+.avatar {
+  width: 155px;
+  height: auto;
+  border-radius: 20%;
+  border: solid 3px #4285f4;
+  padding: 5px;
+}
+
+.avatar-name {
+  color: var(--text-color);
+  font-weight: 500;
+  font-size: 2.5rem;
+  margin: 15px 0 0 0;
+}
+
+.avatar-job {
+  color: var(--alternative-color);
+  font-weight: 400;
+  font-size: 0.945rem;
+}
+
+.social-link {
+  column-count: 3;
+  font-size: 1.1rem;
+}
+
+.social-link a {
+  color: var(--text-color);
+  padding: 0.5rem;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.social-link a:hover {
+  color: var(--body-color);
+  background-color: #4285f4;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.about-title {
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: 0.3s;
+  cursor: default;
+}
+
+.about-text {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #212529;
+}
+
+.header-buttons {
+  column-count: 2;
+}
+
+.btn-cv {
+  border: 2px solid #4285f4;
+  color: #4285f4;
+  width: 100px;
+  background-color: transparent;
+  transition: 0.3;
+}
+
+.btn-cv:hover,
+.btn-cv:hover:active {
+  background-color: #4285f4;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  color: #f1f1f1;
+}
+
+.btn-blog {
+  border: #4285f4 2px solid;
+  background-color: #4285f4;
+  color: #f1f1f1;
+  width: 200px;
+}
+
+.btn-blog:hover,
+.btn-blog:hover:active {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border: #4285f4 2px solid;
+  background-color: transparent;
+  color: #4285f4;
+  transition: 0.3s;
+}
+
+.btn-blog:active {
+  transform: scale(1.02);
+}
+
+.btn-color-social {
+  background-color: var(--body-color);
+}
+
+/* ------ Small Responsive Devices ------ */
+
+@media (max-width: 575.98px) {
+  .btn-cv {
+    width: 50px;
+  }
+  .btn-blog {
+    width: 100px;
+  }
+}
+
+/* ------ Medium Responsive Devices ------ */
+
+@media (max-width: 991.98px) {
+  .btn-cv {
+    width: 90px;
+  }
+  .btn-blog {
+    width: 180px;
+  }
+}
+
+/* ------ Large Responsive Devices ------ */
