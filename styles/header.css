@@ -84,7 +84,6 @@
 .btn-blog:hover:active {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   border: #4285f4 2px solid;
-  background-color: transparent;
   color: #4285f4;
   transition: 0.3s;
 }

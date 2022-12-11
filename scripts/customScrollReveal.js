@@ -6,6 +6,12 @@ ScrollReveal().reveal('.header', {
     distance:"60px"
 });
 
+ScrollReveal().reveal('.avatar', {
+    origin: "top",
+    delay:600,
+    distance:"60px"
+});
+
 // home
 ScrollReveal().reveal('.btn-group', {
     opacity:0,
