@@ -38,6 +38,7 @@
 .main {
   margin-top: 5rem;
   margin-bottom: 1.5rem;
+  justify-content: center;
 }
 
 .card {
@@ -175,10 +176,61 @@
   background-color: var(--text-color-2);
 }
 
-
 /* =========== Small Responsive ============ */
-@media (max-width: 575.98px){
+@media (max-width: 768.98px) {
+  .card-subtitle {
+    top: 40%;
+    left: 50%;
+  }
+
+  .card-title {
+    top: 52%;
+    left: 50%;
+    font-size: medium;
+  }
+
+  .card-button {
+    top: 59%;
+    left: 50%;
+  }
+}
+
+@media (max-width: 575.98px) {
   .filters-content {
     width: 90%;
+  }
+
+  .card-subtitle {
+    top: 40%;
+    left: 50%;
+  }
+
+  .card-title {
+    top: 52%;
+    left: 50%;
+    font-size: medium;
+  }
+
+  .card-button {
+    top: 59%;
+    left: 50%;
+  }
+}
+
+/* ====== large Responsive ===== */
+@media (max-width: 1024.98px) {
+  .card-subtitle {
+    top: 45%;
+    left: 50%;
+  }
+
+  .card-title {
+    top: 52%;
+    left: 50%;
+  }
+
+  .card-button {
+    top: 59%;
+    left: 50%;
   }
 }

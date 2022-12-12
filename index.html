@@ -50,8 +50,8 @@
             </div>
 
             <div class="btn-group mt-5">
-                <a href="#" class="btn btn-cv me-5 rounded">CV</a>
-                <a href="#" class="btn btn-blog rounded">Blog</a>
+                <a href="assests/cv/CV - Murat Eren Nar.pdf" download class="btn btn-cv me-5 rounded">CV</a>
+                <a tabindex="0" href="#" tabindex="-1" class="btn btn-blog rounded" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="focus" data-bs-content="Yakında ...">Blog</a>
             </div>
         </header>
 
@@ -72,9 +72,9 @@
             <div class="row justify-content-center text-center main-row">
                 <div class="filters-sections">
                     <!-- ==================== Projects ==================== -->
-                    <div class="row row-cols-1 row-cols-md-2 g-5 filters_active" data-content id="projects" data-masonry='{"percentPosition": true }'>
-                        <div class="col">
-                            <div class="card">
+                    <div class="row row-cols-1 row-cols-md-2 g-4 text-center filters_active" data-content id="projects" data-masonry='{"percentPosition": true }'>
+                        <div class="col-auto text-center">
+                            <div class="card text-center">
                                 <img src="https://images.unsplash.com/photo-1661956602944-249bcd04b63f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxzZWFyY2h8MXx8ZGV2ZWxvcGVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
                                     class="card-img-top card-image" alt="...">
                                 <div class="overlay">
@@ -86,7 +86,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col-auto">
                             <div class="card">
                                 <img src="https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8ZGV2ZWxvcGVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
                                     class="card-img-top" alt="...">
@@ -99,7 +99,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col-auto">
                             <div class="card">
                                 <img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8ZGV2ZWxvcGVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
                                     class="card-img-top" alt="...">
@@ -112,7 +112,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col-auto">
                             <div class="card">
                                 <img src="https://images.unsplash.com/photo-1593720213411-697ba0ac0162?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGZyb250ZW5kJTIwZGV2ZWxvcGVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
                                     class="card-img-top" alt="...">
@@ -125,7 +125,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col-auto">
                             <div class="card">
                                 <img src="https://images.unsplash.com/photo-1593720213411-697ba0ac0162?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGZyb250ZW5kJTIwZGV2ZWxvcGVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
                                     class="card-img-top" alt="...">
@@ -138,7 +138,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col-auto">
                             <div class="card">
                                 <img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8ZGV2ZWxvcGVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
                                     class="card-img-top" alt="...">
@@ -244,6 +244,9 @@
                 </div>
             </div>
         </footer>
+
+        <!-- Popper -->
+    <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
 
         <!-- Bootstrap JavaScript Libraries -->
         <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
